@@ -10,10 +10,10 @@
   },
   "plugins": [
     {
-      "name": "claude-session-reflection",
+      "name": "powerups-session-reflection",
       "source": {
         "source": "url",
-        "url": "https://github.com/njt/claude-session-reflection.git"
+        "url": "https://github.com/njt/powerups-session-reflection.git"
       },
       "description": "Analyze session history for inefficiency patterns and propose actionable improvements",
       "version": "1.0.0",

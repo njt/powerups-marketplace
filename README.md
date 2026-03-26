@@ -18,7 +18,7 @@ Add this marketplace to Claude Code:
 
 **Install:**
 ```
-/plugin install claude-session-reflection@powerups-marketplace
+/plugin install powerups-session-reflection@powerups-marketplace
 ```
 
 **What you get:**
@@ -26,7 +26,7 @@ Add this marketplace to Claude Code:
 - `/reflect` command — run a reflection at end of session
 - Auto-detects project session data from working directory
 
-**Repository:** https://github.com/njt/claude-session-reflection
+**Repository:** https://github.com/njt/powerups-session-reflection
 
 ---
 
