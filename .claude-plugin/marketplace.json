@@ -1,0 +1,23 @@
+{
+  "name": "powerups-marketplace",
+  "owner": {
+    "name": "Nat Torkington",
+    "email": "nat@torkington.com"
+  },
+  "metadata": {
+    "description": "Practical workflow skills and tools for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-session-reflection",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/njt/claude-session-reflection.git"
+      },
+      "description": "Analyze session history for inefficiency patterns and propose actionable improvements",
+      "version": "1.0.0",
+      "strict": true
+    }
+  ]
+}
