@@ -28,6 +28,16 @@
       "description": "Requirements management toolkit: Socratic elicitation, reverse-engineering from code, and maintenance during development",
       "version": "1.0.0",
       "strict": true
+    },
+    {
+      "name": "powerups-code-investigation",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/njt/powerups-code-investigation.git"
+      },
+      "description": "Evidence-based codebase investigation with mandatory citations - prevents guesses and assumptions",
+      "version": "1.0.0",
+      "strict": true
     }
   ]
 }

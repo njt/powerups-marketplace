@@ -51,6 +51,26 @@ Add this marketplace to Claude Code:
 
 ---
 
+### Code Investigation
+
+**Description:** Evidence-based codebase investigation with mandatory citations — prevents guesses and assumptions.
+
+**Install:**
+```
+/plugin install powerups-code-investigation@powerups-marketplace
+```
+
+**What you get:**
+- `code-investigation` skill — 6-phase investigation protocol
+- Mandatory `file:line` citations for every claim
+- Red flags that stop Claude from guessing
+- Database-specific investigation rules
+- Structured findings output format
+
+**Repository:** https://github.com/njt/powerups-code-investigation
+
+---
+
 ## Marketplace Structure
 
 ```
