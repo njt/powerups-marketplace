@@ -71,6 +71,27 @@ Add this marketplace to Claude Code:
 
 ---
 
+### VaultBot 3000
+
+**Description:** Automated journaling and reflection for Claude Code sessions — writes structured records into an Obsidian vault with thread tracking and weekly digests.
+
+**Install:**
+```
+/plugin install powerups-vaultbot3000@powerups-marketplace
+```
+
+**What you get:**
+- `journal` skill — structured session journal written to Obsidian on session end
+- `reflect` skill — synthesize journals into thread documents and weekly digests
+- SessionEnd hook — automatic journaling when sessions close
+- Weekly digest cron job (Sunday 5am)
+
+**Prerequisites:** `notesmd` CLI, `jq`, Obsidian vault with `Agent Journals` folder
+
+**Repository:** https://github.com/njt/powerups-vaultbot3000
+
+---
+
 ## Marketplace Structure
 
 ```

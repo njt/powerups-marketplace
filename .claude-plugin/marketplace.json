@@ -38,6 +38,16 @@
       "description": "Evidence-based codebase investigation with mandatory citations - prevents guesses and assumptions",
       "version": "1.0.0",
       "strict": true
+    },
+    {
+      "name": "powerups-vaultbot3000",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/njt/powerups-vaultbot3000.git"
+      },
+      "description": "Automated journaling and reflection for Claude Code sessions — Obsidian vault integration",
+      "version": "0.1.0",
+      "strict": true
     }
   ]
 }
