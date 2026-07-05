@@ -45,7 +45,7 @@
         "source": "url",
         "url": "https://github.com/njt/powerups-vaultbot3000.git"
       },
-      "description": "Automated journaling and reflection for Claude Code sessions — Obsidian vault integration",
+      "description": "Automated journaling and reflection for Claude Code sessions \u2014 Obsidian vault integration",
       "version": "0.3.0",
       "strict": true
     },
@@ -55,7 +55,7 @@
         "source": "url",
         "url": "https://github.com/njt/powerups-rate-my-cli.git"
       },
-      "description": "Assess and remediate a CLI codebase against agent-native CLI principles — 45 static checks across 10 principles, with a conformance-fix loop",
+      "description": "Assess and remediate a CLI codebase against agent-native CLI principles \u2014 45 static checks across 10 principles, with a conformance-fix loop",
       "version": "1.0.0",
       "strict": true
     },
@@ -66,7 +66,7 @@
         "url": "https://github.com/njt/powerups-wiki-ingest.git"
       },
       "description": "Ingest URLs and GitHub repos into an Obsidian wiki with an LLM",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "strict": true
     }
   ]
