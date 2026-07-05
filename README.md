@@ -92,6 +92,26 @@ Add this marketplace to Claude Code:
 
 ---
 
+### Wiki Ingest
+
+**Description:** Feed it a URL or GitHub repo; it fetches the source, analyzes it with an LLM, and files a cross-linked page into your Obsidian wiki — updating an index and an append-only log. Each ingest runs in an isolated git worktree, so many URLs process in parallel safely.
+
+**Install:**
+```
+/plugin install powerups-wiki-ingest@powerups-marketplace
+```
+
+**What you get:**
+- `/wiki-ingest` command — ingest one or many URLs (regular pages or deep GitHub-repo analysis)
+- `wiki-ingest-setup` — one-command bootstrap of a new wiki
+- Deterministic duplicate detection, merge-retry, best-effort push, optional `surf` browser fallback
+
+**Configuration:** `WIKI_PATH` (required — your wiki directory); `WIKI_INGEST_CLI` (optional — the LLM CLI, default `claude`)
+
+**Repository:** https://github.com/njt/powerups-wiki-ingest
+
+---
+
 ## Marketplace Structure
 
 ```
