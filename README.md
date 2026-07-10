@@ -92,6 +92,27 @@ Add this marketplace to Claude Code:
 
 ---
 
+### Rate My CLI
+
+**Description:** Assess and remediate a CLI codebase against agent-native CLI principles — 47 static pass/fail checks across 10 principles, with a read-only assessment and a conformance-fix loop.
+
+**Install:**
+```
+/plugin install powerups-rate-my-cli@powerups-marketplace
+```
+
+**What you get:**
+- `rate-my-cli` skill — statically score a CLI on how well it serves AI agents (inspired by Trevin Chow's *10 Principles for Agent-Native CLIs*)
+- `assess` mode — read-only, static; fans out one evaluator per principle into a `SCORECARD.md` with `file:line` evidence and a prioritized remediation plan
+- `remediate` mode — conformance-fix loop: auto-fixes localized `conformance` gaps (Blockers first), verifies with read-only commands, and only *proposes* whole-subsystem `feature` gaps
+- `validate` mode (opt-in) — runs the remediated CLI live to catch bugs static analysis misses; mutations run only against an explicit throwaway sandbox
+
+**Safety:** Assessment never runs the target CLI; remediation edits source and verifies with provably read-only commands only.
+
+**Repository:** https://github.com/njt/powerups-rate-my-cli
+
+---
+
 ### Wiki Ingest
 
 **Description:** Feed it a URL or GitHub repo; it fetches the source, analyzes it with an LLM, and files a cross-linked page into your Obsidian wiki — updating an index and an append-only log. Each ingest runs in an isolated git worktree, so many URLs process in parallel safely.
