@@ -55,8 +55,8 @@
         "source": "url",
         "url": "https://github.com/njt/powerups-rate-my-cli.git"
       },
-      "description": "Assess and remediate a CLI codebase against agent-native CLI principles \u2014 47 static checks across 10 principles, with a conformance-fix loop",
-      "version": "1.0.0",
+      "description": "Assess and remediate a CLI codebase against agent-native CLI principles \u2014 48 static checks across 10 principles, with a conformance-fix loop",
+      "version": "1.1.0",
       "strict": true
     },
     {

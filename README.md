@@ -94,7 +94,7 @@ Add this marketplace to Claude Code:
 
 ### Rate My CLI
 
-**Description:** Assess and remediate a CLI codebase against agent-native CLI principles — 47 static pass/fail checks across 10 principles, with a read-only assessment and a conformance-fix loop.
+**Description:** Assess and remediate a CLI codebase against agent-native CLI principles — 48 static pass/fail checks across 10 principles, with a read-only assessment and a conformance-fix loop.
 
 **Install:**
 ```
