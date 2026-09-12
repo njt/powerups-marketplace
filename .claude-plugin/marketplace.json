@@ -65,8 +65,8 @@
         "source": "url",
         "url": "https://github.com/njt/powerups-wiki-ingest.git"
       },
-      "description": "Ingest URLs and GitHub repos into an Obsidian wiki with an LLM",
-      "version": "2.0.0",
+      "description": "Ingest URLs and GitHub repos into an Obsidian wiki with an LLM; a fixed topic list with compiled topic pages",
+      "version": "3.0.0",
       "strict": true
     }
   ]
