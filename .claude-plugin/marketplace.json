@@ -46,7 +46,7 @@
         "url": "https://github.com/njt/powerups-vaultbot3000.git"
       },
       "description": "Automated journaling and reflection for Claude Code sessions \u2014 Obsidian vault integration",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "strict": true
     },
     {
