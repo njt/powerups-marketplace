@@ -12,24 +12,6 @@ Add this marketplace to Claude Code:
 
 ## Available Plugins
 
-### Session Reflection
-
-**Description:** Analyze session history for inefficiency patterns and propose actionable improvements.
-
-**Install:**
-```
-/plugin install powerups-session-reflection@powerups-marketplace
-```
-
-**What you get:**
-- `session-reflection` skill — structured retrospective analysis
-- `/reflect` command — run a reflection at end of session
-- Auto-detects project session data from working directory
-
-**Repository:** https://github.com/njt/powerups-session-reflection
-
----
-
 ### Requirements Management
 
 **Description:** Requirements management toolkit: Socratic elicitation, reverse-engineering from code, and maintenance during development.
@@ -81,12 +63,12 @@ Add this marketplace to Claude Code:
 ```
 
 **What you get:**
-- `journal` skill — structured session journal written to Obsidian on session end
+- `journal` skill — structured session journal written to Obsidian when a session ends
 - `reflect` skill — synthesize journals into thread documents and weekly digests
-- SessionEnd hook — automatic journaling when sessions close
-- Weekly digest cron job (Sunday 5am)
+- SessionEnd hook — hands off to a background worker so journaling survives Claude Code cancelling the hook
+- Weekly cron jobs — catch-up for missed sessions (Sunday 3am) and the digest (Sunday 5am)
 
-**Prerequisites:** `notesmd` CLI, `jq`, Obsidian vault with `Agent Journals` folder
+**Prerequisites:** `jq`, `python3`, `cron`, an Obsidian vault (or any markdown folder). macOS and Linux only.
 
 **Repository:** https://github.com/njt/powerups-vaultbot3000
 
@@ -115,7 +97,7 @@ Add this marketplace to Claude Code:
 
 ### Wiki Ingest
 
-**Description:** Feed it a URL or GitHub repo; it fetches the source, analyzes it with an LLM, and files a cross-linked page into your Obsidian wiki — updating an index and an append-only log. Each ingest runs in an isolated git worktree, so many URLs process in parallel safely.
+**Description:** Fetch a URL (or GitHub repo), analyze it with an LLM, and file it as cross-linked pages in an Obsidian wiki.
 
 **Install:**
 ```
@@ -123,11 +105,13 @@ Add this marketplace to Claude Code:
 ```
 
 **What you get:**
-- `/wiki-ingest` command — ingest one or many URLs (regular pages or deep GitHub-repo analysis)
-- `wiki-ingest-setup` — one-command bootstrap of a new wiki
-- Deterministic duplicate detection, merge-retry, best-effort push, optional `surf` browser fallback
+- `/wiki-ingest` command — ingest one or many URLs in parallel: web pages, deep GitHub-repo analysis, and YouTube videos (transcript via `ytx`)
+- Three tiers per source — `raw/` (verbatim), `summary/` (précis tagged with one or two topics from a fixed `topics.md`), `note/` (the analysis page)
+- Compiled topic pages — `wiki-compile` and `wiki-recompile` rebuild each `topic/` page from every summary tagged with it; `wiki-curate` runs deterministic health checks with no LLM
+- `wiki-ingest-setup` — one-command bootstrap of a new wiki; `wiki-migrate-topics` upgrades a 2.x wiki
+- Deterministic duplicate detection, merge-retry, best-effort push, optional `surf` browser fallback for JS-heavy pages
 
-**Configuration:** `WIKI_PATH` (required — your wiki directory); `WIKI_INGEST_CLI` (optional — the LLM CLI, default `claude`)
+**Configuration:** `WIKI_PATH` (required — your wiki directory); `WIKI_INGEST_CLI` (optional — the nested LLM CLI, `claude` by default or `pi`). See the plugin README for the single-call mode and model variables.
 
 **Repository:** https://github.com/njt/powerups-wiki-ingest
 

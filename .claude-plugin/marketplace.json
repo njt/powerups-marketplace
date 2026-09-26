@@ -6,19 +6,9 @@
   },
   "metadata": {
     "description": "Practical workflow skills and tools for Claude Code",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
-    {
-      "name": "powerups-session-reflection",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/njt/powerups-session-reflection.git"
-      },
-      "description": "Analyze session history for inefficiency patterns and propose actionable improvements",
-      "version": "1.0.0",
-      "strict": true
-    },
     {
       "name": "powerups-requirements",
       "source": {
@@ -45,7 +35,7 @@
         "source": "url",
         "url": "https://github.com/njt/powerups-vaultbot3000.git"
       },
-      "description": "Automated journaling and reflection for Claude Code sessions \u2014 Obsidian vault integration",
+      "description": "Automated journaling and reflection for Claude Code sessions — writes structured records into an Obsidian vault with thread tracking and weekly digests",
       "version": "0.3.2",
       "strict": true
     },
@@ -55,7 +45,7 @@
         "source": "url",
         "url": "https://github.com/njt/powerups-rate-my-cli.git"
       },
-      "description": "Assess and remediate a CLI codebase against agent-native CLI principles \u2014 48 static checks across 10 principles, with a conformance-fix loop",
+      "description": "Assess and remediate a CLI codebase against agent-native CLI principles — 48 static pass/fail checks across 10 principles, with a read-only assessment and a conformance-fix loop",
       "version": "1.1.0",
       "strict": true
     },
@@ -65,8 +55,8 @@
         "source": "url",
         "url": "https://github.com/njt/powerups-wiki-ingest.git"
       },
-      "description": "Ingest URLs, GitHub repos and YouTube talks into an Obsidian wiki with an LLM",
-      "version": "3.1.0",
+      "description": "Fetch a URL (or GitHub repo), analyze it with an LLM, and file it as cross-linked pages in an Obsidian wiki",
+      "version": "3.2.0",
       "strict": true
     }
   ]
